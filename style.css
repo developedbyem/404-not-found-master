@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-brownGray: #333;
+  --font-inconsolata: "Inconsolata"; /*700*/
+  --font-monoSpace: "Space Mono"; /*400,700*/
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+}
+header {
+  padding-inline: 1.5rem;
+  padding-block: 1.25rem;
+  max-width: 1440px;
+  margin: 0 auto 2.75rem;
+}
+
+header p {
+  font-family: var(--font-inconsolata), monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  color: var(--clr-brownGray);
+  text-transform: uppercase;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main .img {
+  padding-inline: 2.75rem;
+  margin-bottom: 3.44rem;
+}
+main .content {
+  padding-bottom: 9.69rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  color: var(--clr-brownGray);
+  font-weight: 700;
+
+  margin-bottom: 1.875rem;
+  padding-left: 1.5rem;
+}
+
+.content p {
+  font-size: 1.125rem;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: #4f4f4f;
+
+  padding-inline: 1.44rem 1.5rem;
+  margin-bottom: 4.125rem;
+}
+.content p::first-letter {
+  text-transform: uppercase;
+}
+.content button {
+  margin-left: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  background: var(--clr-brownGray);
+  padding-inline: 2.715rem;
+  padding-block: 1.47rem;
+  font-family: var(--font-monoSpace);
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  header {
+    padding-inline: 4.812rem;
+    padding-block: 2.5rem;
+    margin-bottom: 10rem;
+  }
+  main {
+    display: flex;
+    padding-inline: 3.125rem 3.75rem;
+    gap: 3.125rem;
+  }
+  main .img {
+    padding-inline: 0;
+    margin-bottom: 0;
+    max-width: 33.69rem;
+  }
+  main .content {
+    padding-bottom: 21.812rem;
+  }
+
+  .content h1 {
+    font-size: clamp(3.125rem, 4vw + 1rem, 4rem);
+    line-height: 60px;
+    padding-left: 0;
+    margin-bottom: 2.25rem;
+  }
+  .content p {
+    font-size: 1.5rem;
+    font-size: clamp(1.312rem, 1.5vw + 0.5rem, 1.5rem);
+    line-height: 36px;
+
+    padding-inline: 0;
+    margin-bottom: 4rem;
+    max-width: 100%;
+  }
+  .content button {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  main {
+    padding-inline: 4.187rem 5.625rem;
+    gap: 4.687rem;
+  }
+  .content h1 {
+    line-height: 85px;
+  }
+  .content p {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  main {
+    padding-inline: 4.812rem 7.437rem;
+    gap: 7.437rem;
+  }
+  .content h1 {
+    line-height: 95px;
+  }
+  .content p {
+    max-width: 65%;
+  }
+}
